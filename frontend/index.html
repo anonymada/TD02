@@ -7,7 +7,7 @@
     <!-- Liaison avec le fichier CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- Liaison avec le fichier JavaScript -->
-    <script src="script.js" defer></script>
+    <script src="script.js" async></script>
   </head>
   <body>
     <h2>Ajouter un utilisateur</h2>
@@ -18,7 +18,7 @@
     </form>
 
     <h2>Liste des utilisateurs</h2>
-    <button onclick="fetchUsers()">Afficher la liste</button>
+    <button onclick="getUsers()">Afficher la liste</button>
 
     <div class="container">
       <table id="userTable">
