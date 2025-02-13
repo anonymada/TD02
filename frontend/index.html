@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion des utilisateurs</title>
+    <!-- Liaison avec le fichier CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Liaison avec le fichier JavaScript -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h2>Ajouter un utilisateur</h2>
+    <form id="userForm">
+      <input type="text" id="nom" placeholder="Nom*" required />
+      <input type="text" id="prenom" placeholder="Prénom*" required />
+      <button type="submit">Ajouter</button>
+    </form>
+
+    <h2>Liste des utilisateurs</h2>
+    <button onclick="fetchUsers()">Afficher la liste</button>
+
+    <div class="container">
+      <table id="userTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Les utilisateurs seront insérés ici -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
